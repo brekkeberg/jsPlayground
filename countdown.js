@@ -1,6 +1,11 @@
 console.log('helloworld')
 
 const container = document.querySelector('.container');
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', () => {
+    alert("HELLLLOOOOOO WORLD,");
+});
 
 
 function getRandomColor(){
@@ -16,8 +21,8 @@ function getRandomColor(){
 
 console.log(getRandomColor())
 
+// loops through countdown process
 let i = 10;
-
 while (i > 0){
     let color = getRandomColor()
     const div = document.createElement('div');
